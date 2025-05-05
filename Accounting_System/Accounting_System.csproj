@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9DD52EF-6EF8-4247-8B46-3A06319B78BB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Accounting_System</RootNamespace>
+    <AssemblyName>Accounting_System</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account_create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account_create.Designer.cs">
+      <DependentUpon>Account_create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contra_voucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contra_voucher.Designer.cs">
+      <DependentUpon>contra_voucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forgot_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forgot_password.Designer.cs">
+      <DependentUpon>Forgot_password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item_master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item_master.Designer.cs">
+      <DependentUpon>Item_master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Journal_voucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Journal_voucher.Designer.cs">
+      <DependentUpon>Journal_voucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ledger_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ledger_details.Designer.cs">
+      <DependentUpon>Ledger_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_main.Designer.cs">
+      <DependentUpon>login_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mng_City.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mng_City.Designer.cs">
+      <DependentUpon>Mng_City.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MNG_company.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MNG_company.Designer.cs">
+      <DependentUpon>MNG_company.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mng_ledger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mng_ledger.Designer.cs">
+      <DependentUpon>Mng_ledger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MNG_MAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MNG_MAIN.Designer.cs">
+      <DependentUpon>MNG_MAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_vouchercs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment_vouchercs.Designer.cs">
+      <DependentUpon>Payment_vouchercs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase_entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase_entry.Designer.cs">
+      <DependentUpon>Purchase_entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase_report.Designer.cs">
+      <DependentUpon>Purchase_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt_voucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receipt_voucher.Designer.cs">
+      <DependentUpon>Receipt_voucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale_Entry.Designer.cs">
+      <DependentUpon>Sale_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale_Report.Designer.cs">
+      <DependentUpon>Sale_Report.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Account_create.resx">
+      <DependentUpon>Account_create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contra_voucher.resx">
+      <DependentUpon>contra_voucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forgot_password.resx">
+      <DependentUpon>Forgot_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item_master.resx">
+      <DependentUpon>Item_master.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Journal_voucher.resx">
+      <DependentUpon>Journal_voucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ledger_details.resx">
+      <DependentUpon>Ledger_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_main.resx">
+      <DependentUpon>login_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mng_City.resx">
+      <DependentUpon>Mng_City.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MNG_company.resx">
+      <DependentUpon>MNG_company.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mng_ledger.resx">
+      <DependentUpon>Mng_ledger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MNG_MAIN.resx">
+      <DependentUpon>MNG_MAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_vouchercs.resx">
+      <DependentUpon>Payment_vouchercs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Purchase_entry.resx">
+      <DependentUpon>Purchase_entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase_report.resx">
+      <DependentUpon>Purchase_report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt_voucher.resx">
+      <DependentUpon>Receipt_voucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale_Entry.resx">
+      <DependentUpon>Sale_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale_Report.resx">
+      <DependentUpon>Sale_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\ADM_LEDGER_TYPE.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\103431_cancel_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\103431_cancel_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1891023_cancel_cercle_close_delete_dismiss_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8726285_search_plus_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\293271_replay_restart_refresh_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\39263_print_printer_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear-all-icon-27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accounting-Software.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-tima-miroshnichenko-6694543.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\permission.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4472395.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3833787.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network-connection-graphic-overlay-laptop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6573.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GST CAM 912-19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\network-connection-graphic-overlay-laptop1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black-office-business-equipment-black-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

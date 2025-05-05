@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ACCOUNTING_SYSTEM" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=ACCOUNTING_SYSTEM;Integrated Security=True" SettingsObjectName="Accounting_System.Properties.Settings" SettingsPropertyName="ACCOUNTING_SYSTEMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.ADM_LEDGER_REPORT" Member="ADM_LEDGER_REPORTs">
+    <Type Name="ADM_LEDGER_REPORT">
+      <Column Name="ADM_LEDGER_REPORT_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="WINDOW" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ACCOUNT_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VOUCHER_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="VOUCHER_DATE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BALANCE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ADM_LEDGER_TYPE" Member="ADM_LEDGER_TYPEs">
+    <Type Name="ADM_LEDGER_TYPE">
+      <Column Name="ADM_LEDGER_TYPE_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LEDGER_TYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REMARKS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MNG_COMPANY" Member="MNG_COMPANies">
+    <Type Name="MNG_COMPANY">
+      <Column Name="MNG_COMPANY_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="COMPANY_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MNG_PACK" Member="MNG_PACKs">
+    <Type Name="MNG_PACK">
+      <Column Name="MNG_PACK_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PACK" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MNG_PURCHASE_CART" Member="MNG_PURCHASE_CARTs">
+    <Type Name="MNG_PURCHASE_CART">
+      <Column Name="MNG_PURCHASE_CART_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PURCHASE_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="INVOICE_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SUPPLIER_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCT_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCT_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HSN_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LANDING_PRICE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SALLING_PRICE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="QNT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DISCOUNT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BEFORE_TAX" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CGST_PER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CGST_VALUE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SGST_PER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SGST_VALUE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IGST_PER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IGST_VALUE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TOTAL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MNG_PURCHASE_PANEL" Member="MNG_PURCHASE_PANELs">
+    <Type Name="MNG_PURCHASE_PANEL">
+      <Column Name="MNG_PURCHASE_PANEL_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PURCHASE_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PURCHASE_DATE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="INVOICE_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="INVOICE_DATE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SUPPLIER_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TRA_NUMBER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="L_R_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TRUCK_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SUB_TOTAL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DISCOUNT_TOTAL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CGST_TOTAL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SGST_TOTAL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IGST_TOTAL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="INWORDS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FREIGHT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PACKING" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ROUND_OFF" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="KASAR_VATAV" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GRAND_TOTAL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MNG_SALE_CART" Member="MNG_SALE_CARTs">
+    <Type Name="MNG_SALE_CART">
+      <Column Name="MNG_SALE_CART_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="INVOICE_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CUSTOMER_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCT_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PRODUCT_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HSN_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MRP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SALLING_PRICE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="QNT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DISCOUNT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BEFORE_TAX" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CGST_PER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CGST_VALUE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SGST_PER" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SGST_VALUE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TOTAL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SAVING" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MNG_SALE_PANEL" Member="MNG_SALE_PANELs">
+    <Type Name="MNG_SALE_PANEL">
+      <Column Name="MNG_SALE_PANEL_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="INVOICE_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="INVOICE_DATE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CUSTOMER_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CUSTOMER_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PAYMENT_TYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PAID_AMT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RTN_AMT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SUB_TOTAL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CGST_TOTAL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SGST_TOTAL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="BILL_DISCOUNT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TOTAL_SAVING" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TOTAL_QNT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ROUND_OFF" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="INWORDS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GRAND_TOTAL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EMPLOYEE_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ADM_REGISTRATION" Member="ADM_REGISTRATIONs">
+    <Type Name="ADM_REGISTRATION">
+      <Column Name="ADM_REGISTRATION_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="COMPANY_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MOBILE_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EMAIL_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="USER_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="USER_TYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MNG_CITY" Member="MNG_CITies">
+    <Type Name="MNG_CITY">
+      <Column Name="MNG_CITY_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CITY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PIN_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MNG_LEDGER" Member="MNG_LEDGERs">
+    <Type Name="MNG_LEDGER">
+      <Column Name="MNG_LEDGER_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LEDGER_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LEDGER_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LEDGER_TYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MOBILE_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ADDRESS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CITY" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GST_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AADHAR_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PAN_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OPENING_BALANCE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NARRATION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ENTRY_DATE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MNG_ITEM_MASTER" Member="MNG_ITEM_MASTERs">
+    <Type Name="MNG_ITEM_MASTER">
+      <Column Name="MNG_ITEM_MASTER_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ITEM_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ITEM_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="COMPANY_NAME" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PACK" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HSN_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MRP" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ITEM_LANDING_PRICE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OPENING_STOCK" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CGST" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SGST" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DISCOUNT" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SALE_PRICE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NARRATION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ENTRY_DATE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
